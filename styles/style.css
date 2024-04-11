@@ -22,3 +22,16 @@
 .coupon2{
     background: rgb(247, 140, 156);
 }
+
+.input{
+    border-bottom:dotted ;
+    
+
+}
+
+/* @media screen and (max-width:768px) {
+    .divider-img{
+    
+    }
+    
+} */
