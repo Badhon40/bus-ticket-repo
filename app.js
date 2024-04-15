@@ -82,6 +82,7 @@
        // Get references to the input element and the next button
             const phoneNumberInput = document.getElementById('phoneNumber');
             const btnNext = document.getElementById('btn-next');
+            const popUp=document.getElementById('popUp');
 
             // Function to enable the next button if conditions are met
             function enableNextButton() {
@@ -97,8 +98,7 @@
                     if (!btnNext.hasListener) {
                         btnNext.addEventListener('click', function () {
                             // Show the popup
-                            document.getElementById('popUp').classList.remove('hidden');
-                            document.body.classList.add('background');
+                            popUp.showModal();
                         });
                         btnNext.hasListener = true; // Add a flag to track that the listener has been added
                     }
@@ -117,7 +117,7 @@
             // remove modal 
            const closePopUp= document.getElementById('closePopUpBtn')
            closePopUp.addEventListener('click',function(){
-            document.getElementById('popUp').classList.add('hidden');
+              popUp.close();
            })
 
     })

@@ -32,8 +32,8 @@ html{
 
 }
 
-.background{
-    : rgba(143, 140, 140, 0.731);
+dialog::backdrop{
+    background: rgba(70, 68, 68, 0.5);
 }
 
 /* @media screen and (max-width:768px) {
